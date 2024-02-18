@@ -12,7 +12,9 @@
 <div class="flex min-h-full flex-col justify-left px-6 py-12 lg:px-8" style="margin-top: 100px">
     <div class="lg:mx-auto sm:w-full lg:max-w-sm d-none">
         <img class="mx-auto h-20 w-auto" src="/img/logo.jpg" alt="Company">
-        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Administrator Panel</h2>
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            የ የካ ክ/ከተማ ሰነድ እና መሪ መገለጫ አስተዳደር
+        </h2>
     </div>
     <div>
         <form  class="max-w-sm mx-auto"  id="loginfrm">

@@ -8,6 +8,6 @@ class Admin extends Controller
 {
     public function dashboard()
     {
-        return view("index");
+        return view("index",['script'=>'dashboard.js']);
     }
 }
