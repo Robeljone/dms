@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Citys;
+use App\Models\LeadersProfiles;
 use App\Models\MainOffices;
 use App\Models\Organizations;
 use App\Models\Roles;
@@ -20,7 +21,8 @@ class Settings extends Controller
         $fields = FiledStudys::query()->get();
         $citys = Citys::query()->get();
         $zones = Zones::query()->get();
-        return view('woreda',['fileds'=>$fields,'city'=>$citys,'zones'=>$zones]);
+        $records = LeadersProfiles::query()->where('woreda','!=',null)->get();
+        return view('woreda',['leaders'=>$records,'fileds'=>$fields,'city'=>$citys,'zones'=>$zones,'script'=>'woreda.js']);
     }
 
     public function organ_pg()

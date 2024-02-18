@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Admin Panel</title>
     <meta charset="utf-8">
@@ -11,9 +12,20 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.2/css/buttons.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .profile-container {
+            max-width: 600px; /* Adjust max-width as needed */
+            margin: auto;
+        }
+
+        .profile-image {
+            border-radius: 50%; /* Create a circular image */
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-<nav class="fixed top-0 z-50 w-full bg-blue-200 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+<nav class="fixed top-0 z-50 w-full bg-white-200 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start rtl:justify-end">
@@ -24,8 +36,8 @@
                     </svg>
                 </button>
                 <a href="dashboard" class="flex ms-2 md:me-24">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Admins</span>
+                    <img src="/img/logo.jpg" class="h-10 me-3" alt="Organization Logo" />
+                    <span class="self-center text-sm font-semibold sm:text-1xl whitespace-nowrap dark:text-white">{{Session::get('user')[0]['name']}}</span>
                 </a>
             </div>
             <div class="flex items-center">
@@ -47,7 +59,7 @@
                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user" style="margin-right: 15px">
                         <div class="px-4 py-3" role="none">
                             <p class="text-sm text-gray-900 dark:text-white" role="none">
-                                Robel Yohannes
+                                {{Session::get('user')[0]['name']}}
                             </p>
                         </div>
                         <ul class="py-1" role="none">
@@ -59,7 +71,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
+                                <a href="http://localhost:8000/logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
                             </li>
                         </ul>
                     </div>
@@ -109,7 +121,7 @@
                     <br>
                     <div class="relative">
                         <button type="submit" data-modal-hide="static-modal" class="px-8 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Login
+                            Change
                         </button>
                         <button type="button" data-modal-hide="static-modal" class="px-8 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Close

@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="flex min-h-full flex-col justify-left px-6 py-12 lg:px-8" style="margin-top: 100px">
-    <div class="sm:mx-auto sm:w-full sm:max-w-sm d-none">
-        <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+    <div class="lg:mx-auto sm:w-full lg:max-w-sm d-none">
+        <img class="mx-auto h-20 w-auto" src="/img/logo.jpg" alt="Company">
         <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Administrator Panel</h2>
     </div>
     <div>

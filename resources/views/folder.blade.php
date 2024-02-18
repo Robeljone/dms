@@ -2,6 +2,7 @@
 @include(".Includes/sidebar")
 <div class="p-4 sm:ml-64" style="margin-top: 20px;height: 100%">
     <div class="p-4 border-2 border-black-200 border-solid rounded-lg dark:border-gray-700 mt-14">
+        <br>
         <div class="container mx-auto">
             <div class="grid grid-cols-5 gap-4">
                 @foreach($dire as $item)

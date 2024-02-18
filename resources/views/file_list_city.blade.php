@@ -4,7 +4,7 @@
     <div class="p-4 border-2  rounded-lg mt-10">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <div class="container mx-auto mt-8">
-                <table id="list_record" class="stripe hover" style="width:100%">
+                <table id="dataTable" class="stripe hover" style="width:100%">
                     <thead>
                     <tr>
                         <th style="text-align: left">No</th>
@@ -15,14 +15,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($files as $item)
-                        <tr>
-                            <td style="text-align: left">1</td>
-                            <td style="text-align: left">{{$item->name}}</td>
-                            <td style="text-align: left">{{$item->name}}</td>
-                            <td style="text-align: left">{{$item->name}}</td>
-                        </tr>
-                    @endforeach
+                       @foreach($files as $item)
+                           <tr>
+                               <td style="text-align: left">1</td>
+                               <td style="text-align: left">{{$item->name}}</td>
+                               <td style="text-align: left">{{$item->name}}</td>
+                               <td style="text-align: left">{{$item->name}}</td>
+                           </tr>
+                       @endforeach
                     </tbody>
                 </table>
             </div>
@@ -30,4 +30,4 @@
     </div>
 </div>
 </div>
-@include(".Includes/footer")
+@include("Includes/footer")

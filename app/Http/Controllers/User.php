@@ -87,7 +87,6 @@ class User extends Controller
            "role"=>"required"
        ]);
         try {
-            Log::debug($request);
             $pass_hash = bcrypt($request->password);
             Users::query()->create([
                 "name"=>$request->full_name,

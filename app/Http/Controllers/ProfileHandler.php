@@ -16,7 +16,8 @@ class ProfileHandler extends Controller
         $fields = FiledStudys::query()->get();
         $citys = Citys::query()->get();
         $zones = Zones::query()->get();
-        return view('subcity',['fileds'=>$fields,'city'=>$citys,'zones'=>$zones,'script'=>'subcity.js']);
+        $records = LeadersProfiles::query()->where('woreda','=',null)->get();
+        return view('subcity',['leaders'=>$records,'fileds'=>$fields,'city'=>$citys,'zones'=>$zones,'script'=>'subcity.js']);
     }
     public function new_profile_sub(Request $request)
     {

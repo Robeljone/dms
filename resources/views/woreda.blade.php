@@ -122,122 +122,39 @@
         </div>
         <br>
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <div class="pb-4 bg-white dark:bg-gray-900">
-                <label for="table-search" class="sr-only">Search</label>
-                <div class="relative mt-1">
-                    <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                    </div>
-                    <input type="text" id="table-search" class="block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for items">
-                </div>
-            </div>
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        No
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Name
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Gender
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Age
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        City
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Zone
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Nationality
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Edu Level
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Field of Study
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Pre Role
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Current Role
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Woreda
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Action
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                @for($i=1;$i<7;$i++)
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                        <td class="px-6 py-4">
-                            {{$i}}
-                        </td>
-                        <td class="px-6 py-4">
-                            Robel Yohannes
-                        </td>
-                        <td class="px-6 py-4">
-                            Male
-                        </td>
-                        <td class="px-6 py-4">
-                            26
-                        </td>
-                        <td class="px-6 py-4">
-                            Addis Ababa
-                        </td>
-                        <td class="px-6 py-4">
-                            Zone
-                        </td>
-                        <td class="px-6 py-4">
-                            Ethiopia
-                        </td>
-                        <td class="px-6 py-4">
-                            Bsc
-                        </td>
-                        <td class="px-6 py-4">
-                            Computer Science
-                        </td>
-                        <td class="px-6 py-4">
-                            Developer
-                        </td>
-                        <td class="px-6 py-4">
-                            Developer
-                        </td>
-                        <td class="px-6 py-4">
-                            1
-                        </td>
-                        <td class="px-10 py-4"  style="align-items: center">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                <svg class="w-6 h-6 text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.3 4.8 2.9 2.9M7 7H4a1 1 0 0 0-1 1v10c0 .6.4 1 1 1h11c.6 0 1-.4 1-1v-4.5m2.4-10a2 2 0 0 1 0 3l-6.8 6.8L8 14l.7-3.6 6.9-6.8a2 2 0 0 1 2.8 0Z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                <svg class="w-6 h-6 text-red-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M8.6 2.6A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4c0-.5.2-1 .6-1.4ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4 6-9 6s-9-4.8-9-6c0-1.2 4-6 9-6s9 4.8 9 6Z"/>
-                                    <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                </svg>
-                            </a>
-                        </td>
+            <div class="container mx-auto mt-8">
+                <table id="dataTable" class="stripe hover" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th style="text-align: left">No</th>
+                        <th style="text-align: left">Name</th>
+                        <th style="text-align: left">Gender</th>
+                        <th style="text-align: left">Age</th>
+                        <th style="text-align: left">City</th>
+                        <th style="text-align: left">Zone</th>
+                        <th style="text-align: left">Woreda</th>
+                        <th style="text-align: left">Organization</th>
+                        <th style="text-align: left">Action</th>
+                        <!-- Add more columns as needed -->
                     </tr>
-                @endfor
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    @foreach($leaders as $item)
+                        <tr>
+                            <td style="text-align: left">1</td>
+                            <td style="text-align: left">{{$item->name}}</td>
+                            <td style="text-align: left">{{$item->gender}}</td>
+                            <td style="text-align: left">{{$item->age}}</td>
+                            <td style="text-align: left">{{$item->city}}</td>
+                            <td style="text-align: left">{{$item->zone}}</td>
+                            <td style="text-align: left">{{$item->woreda}}</td>
+                            <td style="text-align: left">{{$item->org_id}}</td>
+                            <td style="text-align: left">{{$item->name}}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
